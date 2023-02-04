@@ -1,0 +1,23 @@
+.dropdown {
+	padding: 4px 0;
+}
+.dropdown li {
+	background-color: rgba(245, 240, 173, 0.5);
+	list-style-type: none;
+	padding: 10px 0 10px 0;
+	width: 13vw;
+	position: relative;
+	z-index: 1;
+	cursor: pointer;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.navigationBar :first-child:hover,
+.dropdownBtn :first-child:hover,
+.dropdown li:hover {
+	color: rgb(224, 175, 217);
+}
+.dropdownBtn.active .dropdown li {
+	transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+	opacity: 1;
+}

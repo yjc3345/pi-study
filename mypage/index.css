@@ -2,45 +2,25 @@ body {
 	margin: 0;
 	background-color: rgb(255, 249, 253);
 }
-header nav {
+
+header .navigationBar {
 	display: flex;
-	width: 100%;
 	justify-content: end;
+	width: 100vw;
 	background-color: rgba(245, 240, 173, 0.5);
-	padding-top: 20px;
-	padding-bottom: 10px;
+	padding: 20px 20px 10px 0;
 	position: absolute;
 	text-align: center;
 }
 header div {
 	background-color: transparent;
 	border: none;
-	width: 200px;
+	width: 13vw;
 	height: 35px;
-	font-size: 18px;
+	font-size: 1.2rem;
 	font-family: 'Courier New', Courier, monospace;
 	white-space: nowrap;
 	cursor: pointer;
-}
-.dropdown div {
-	position: relative;
-	z-index: 1;
-	padding-top: 10px;
-	background-color: rgba(245, 240, 173, 0.5);
-	cursor: pointer;
-}
-.dropdown {
-	display: none;
-}
-.dropdown :first-child {
-	margin-top: 24px;
-	padding-top: 5px;
-}
-.navigationBar :first-child:hover {
-	color: rgb(224, 175, 217);
-}
-.dropdownBtn div :hover {
-	color: rgb(224, 175, 217);
 }
 .center {
 	display: flex;
@@ -49,8 +29,7 @@ header div {
 .menu {
 	border-right: 1px solid lightgray;
 	margin-top: 65px;
-	padding: 30px;
-	padding-top: 50px;
+	padding: 50px 30px 30px 30px;
 	width: 45%;
 }
 .menu div {
