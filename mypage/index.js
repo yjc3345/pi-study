@@ -4,10 +4,21 @@ const closeBtn = document.querySelector('.close');
 const modal = document.querySelector('.modal');
 const modalBtn = document.querySelector('#modalBtn');
 
+//dropdown
 dropdownBtn.addEventListener('click', function () {
 	dropdownBtn.classList.toggle('active');
 });
 
+//modal
+closeBtn.onclick = function () {
+	modal.style.display = 'none';
+};
+modalBtn.onclick = function () {
+	modal.style.display = 'block';
+};
+
+// 처음 만든 드롭다운
+// dropdownBtn.onclick = dropdownBtnClick;
 // function dropdownBtnClick() {
 // 	if (dropdown.style.display === 'block') {
 // 		dropdown.style.display = 'none';
@@ -15,12 +26,3 @@ dropdownBtn.addEventListener('click', function () {
 // 		dropdown.style.display = 'block';
 // 	}
 // }
-function closeOnClick() {
-	modal.style.display = 'none';
-}
-function modalOnclick() {
-	modal.style.display = 'block';
-}
-// dropdownBtn.onclick = dropdownBtnClick;
-closeBtn.onclick = closeOnClick;
-modalBtn.onclick = modalOnclick;

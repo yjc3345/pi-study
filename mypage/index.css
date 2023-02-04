@@ -16,13 +16,15 @@ header div {
 	background-color: transparent;
 	border: none;
 	width: 13vw;
+	min-width: 130px;
 	height: 35px;
 	font-size: 1.2rem;
 	font-family: 'Courier New', Courier, monospace;
 	white-space: nowrap;
 	cursor: pointer;
 }
-.center {
+.center,
+.introAll {
 	display: flex;
 	justify-content: left;
 }
@@ -30,34 +32,26 @@ header div {
 	border-right: 1px solid lightgray;
 	margin-top: 65px;
 	padding: 50px 30px 30px 30px;
-	width: 45%;
-}
-.menu div {
+	width: 45vw;
 	text-align: center;
 	font-family: 'Courier New', Courier, monospace;
 }
 .menu img {
 	width: 100%;
-	align-self: center;
-}
-.introAll {
-	display: flex;
-	justify-content: center;
+	min-width: 150px;
 }
 .intro {
 	display: flex;
 	flex-direction: column;
 	font-family: cursive;
-	padding-top: 110px;
-	padding-right: 20px;
+	padding: 110px 20px 0 30px;
 	text-align: end;
-	padding-left: 30px;
 }
-.intro :nth-child(1) {
+.intro .hi {
 	font-size: 120px;
 	line-height: 110px;
 }
-.intro :nth-child(1) > div {
+.intro .name {
 	font-size: 125px;
 	-webkit-text-fill-color: rgb(251, 202, 218);
 	-webkit-text-stroke-width: 2px;
@@ -67,49 +61,9 @@ header div {
 	font-size: 50px;
 	white-space: nowrap;
 }
-.introAll :nth-child(2) {
+.introAll img {
 	width: 40%;
-	padding: 30px;
-	padding-top: 110px;
-}
-.modal {
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	background-color: rgb(0, 0, 0, 0.4);
-	display: none;
-	z-index: 2;
-}
-.modalContent {
-	position: absolute;
-	background-color: white;
-	width: 650px;
-	height: 595px;
-	position: fixed;
-	top: 10%;
-	left: 30%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	font-family: 'Courier New', Courier, monospace;
-}
-.close {
-	position: absolute;
-	top: 10px;
-	right: -45px;
-	font-size: 30px;
-	border: none;
-	background: none;
-	color: transparent;
-	text-shadow: 0 0 0 white;
-	cursor: pointer;
-}
-.modalContent img {
-	width: 80%;
-	height: 80%;
+	padding: 110px 30px 30px 30px;
 }
 footer {
 	border-top: 1px solid lightgray;
@@ -121,18 +75,13 @@ footer div {
 footer span {
 	padding: 20px;
 }
-@media (max-width: 1063px) {
-	.menu img {
-		width: 150px;
-	}
-}
 @media (max-width: 950px) {
 	.menu {
-		border-bottom: none;
-		display: flex;
-		flex-direction: column;
+		border: none;
 		width: 100%;
-		margin-top: 0;
+		margin: 0;
+		align-items: center;
+		padding-right: 0;
 	}
 	.menu img {
 		width: 50%;
@@ -141,15 +90,9 @@ footer span {
 	.center {
 		display: block;
 	}
-	header {
+	.introAll {
+		display: flex;
 		justify-content: center;
-	}
-	.navigationBar {
-		width: 100%;
-	}
-}
-@media (max-width: 750px) {
-	header button {
-		width: 11%;
+		padding-bottom: 50px;
 	}
 }

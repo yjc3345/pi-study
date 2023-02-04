@@ -4,8 +4,8 @@
 .dropdown li {
 	background-color: rgba(245, 240, 173, 0.5);
 	list-style-type: none;
+	width: 100%;
 	padding: 10px 0 10px 0;
-	width: 13vw;
 	position: relative;
 	z-index: 1;
 	cursor: pointer;
