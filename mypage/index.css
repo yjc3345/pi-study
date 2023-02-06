@@ -1,5 +1,5 @@
 body {
-	margin: 0;
+	margin: 0px;
 	background-color: rgb(255, 249, 253);
 }
 
@@ -22,6 +22,40 @@ header div {
 	font-family: 'Courier New', Courier, monospace;
 	white-space: nowrap;
 	cursor: pointer;
+}
+.navigationBar :first-child {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+}
+
+.navigationBar :first-child:hover {
+	color: rgb(224, 175, 217);
+}
+.navigationBar :first-child span::after {
+	content: '';
+	border-top: 0px solid transparent;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid rgba(183, 183, 170, 0.5);
+	position: relative;
+	top: -42px;
+	left: -8px;
+}
+.navigationBar :first-child span {
+	visibility: hidden;
+	margin-top: 23px;
+	opacity: 0;
+	padding: 10px;
+	border-radius: 6px;
+}
+.navigationBar :first-child:hover span {
+	visibility: visible;
+	background-color: rgba(183, 183, 170, 0.5);
+	color: black;
+	opacity: 1;
+	transition: opacity 0.2s ease-in;
 }
 .center,
 .introAll {
@@ -72,7 +106,8 @@ footer div {
 	display: flex;
 	justify-content: center;
 }
-footer span {
+footer span,
+a {
 	padding: 20px;
 }
 @media (max-width: 950px) {
