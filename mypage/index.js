@@ -17,7 +17,7 @@ modalBtn.onclick = function () {
 	modal.style.display = 'block';
 };
 
-// 처음 만든 드롭다운.
+// 처음 만든 드롭다운
 // dropdownBtn.onclick = dropdownBtnClick;
 // function dropdownBtnClick() {
 // 	if (dropdown.style.display === 'block') {
