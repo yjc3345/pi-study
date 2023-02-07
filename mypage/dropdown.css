@@ -1,22 +1,29 @@
 .dropdown {
 	padding: 4px 0;
+	visibility: hidden;
+	transition: all 0.5s ease-in-out;
 }
 .dropdown li {
 	background-color: rgba(245, 240, 173, 0.5);
 	list-style-type: none;
 	width: 100%;
-	padding: 10px 0 10px 0;
+	padding: 10px 0;
 	position: relative;
 	cursor: pointer;
+	transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 	opacity: 0;
-	transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 .dropdownBtn :first-child:hover,
 .dropdown li:hover {
 	color: rgb(224, 175, 217);
 }
 .dropdownBtn.active .dropdown li {
-	transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+	transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 	opacity: 1;
-	visibility: visible;
 }
+.dropdownBtn.active .dropdown {
+	visibility: visible;
+	transition: all 0.7s ease-in-out;
+}
+/* 드롭다운에 display:none; 을 적용하면 애니매이션이 사라진다.
+	그래서 부모 요소인 ul에 visibility를 사용해서 적용했다.*/

@@ -23,25 +23,15 @@ header div {
 	white-space: nowrap;
 	cursor: pointer;
 }
+/* 여기부터 툴팁 */
+.navigationBar :first-child:hover {
+	color: rgb(224, 175, 217);
+}
 .navigationBar :first-child {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	flex-direction: column;
-}
-
-.navigationBar :first-child:hover {
-	color: rgb(224, 175, 217);
-}
-.navigationBar :first-child span::after {
-	content: '';
-	border-top: 0px solid transparent;
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-	border-bottom: 10px solid rgba(183, 183, 170, 0.5);
-	position: relative;
-	top: -42px;
-	left: -8px;
 }
 .navigationBar :first-child span {
 	visibility: hidden;
@@ -57,6 +47,17 @@ header div {
 	opacity: 1;
 	transition: opacity 0.2s ease-in;
 }
+.navigationBar :first-child span::after {
+	content: '';
+	border-top: 0px solid transparent;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid rgba(183, 183, 170, 0.5);
+	position: relative;
+	top: -42px;
+	left: -8px;
+}
+/* 여기까지 툴팁*/
 .center,
 .introAll {
 	display: flex;
