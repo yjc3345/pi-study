@@ -21,7 +21,7 @@ header div {
 	font-size: 1.2rem;
 	font-family: 'Courier New', Courier, monospace;
 	white-space: nowrap;
-	cursor: pointer;
+	/* cursor: pointer; */
 }
 /* 여기부터 툴팁 */
 .navigationBar :first-child:hover {
@@ -32,6 +32,7 @@ header div {
 	justify-content: flex-start;
 	align-items: center;
 	flex-direction: column;
+	cursor: pointer;
 }
 .navigationBar :first-child span {
 	visibility: hidden;
