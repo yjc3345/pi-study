@@ -1,0 +1,6 @@
+.accordionSecion {
+	overflow: hidden;
+}
+.accordionCollapse {
+	max-height: 0;
+}

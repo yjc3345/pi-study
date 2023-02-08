@@ -7,21 +7,16 @@ header .navigationBar {
 	display: flex;
 	justify-content: end;
 	width: 100vw;
+	height: 65px;
 	background-color: rgba(245, 240, 173, 0.5);
 	padding: 20px 20px 10px 0;
 	position: absolute;
 	text-align: center;
-}
-header div {
-	background-color: transparent;
+	box-sizing: border-box;
 	border: none;
-	width: 13vw;
 	min-width: 130px;
-	height: 35px;
 	font-size: 1.2rem;
 	font-family: 'Courier New', Courier, monospace;
-	white-space: nowrap;
-	/* cursor: pointer; */
 }
 /* 여기부터 툴팁 */
 .navigationBar :first-child:hover {
@@ -59,6 +54,7 @@ header div {
 	left: -8px;
 }
 /* 여기까지 툴팁*/
+/* 여기서부터 아코디언*/
 .center,
 .introAll {
 	display: flex;
@@ -118,6 +114,7 @@ a {
 		width: 100%;
 		margin: 0;
 		align-items: center;
+		padding-left: 0;
 		padding-right: 0;
 	}
 	.menu img {
