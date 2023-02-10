@@ -20,7 +20,7 @@ header .navigationBar {
 }
 /* 여기부터 툴팁 */
 .navigationBar :first-child:hover {
-	color: rgb(224, 175, 217);
+	color: rgb(219, 161, 211);
 }
 .navigationBar :first-child {
 	display: flex;
