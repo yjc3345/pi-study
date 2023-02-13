@@ -9,6 +9,7 @@ const accordionCollapse = document.querySelectorAll('.accordionCollapse');
 
 //accordion
 function openAccordion(i) {
+	console.log(accordion);
 	accordion[i].addEventListener('click', function () {
 		accordionCollapse[i].classList.toggle('active');
 	});
