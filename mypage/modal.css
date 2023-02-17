@@ -13,7 +13,7 @@
 	position: absolute;
 	background-color: white;
 	width: 45vw;
-	height: 40vw;
+	height: 60vh;
 	position: fixed;
 	top: 15%;
 	left: 30%;
@@ -22,6 +22,9 @@
 	align-items: center;
 	flex-direction: column;
 	font-family: 'Courier New', Courier, monospace;
+	min-width: 450px;
+	min-height: 390px;
+	max-width: 550px;
 }
 .close {
 	position: absolute;
@@ -35,14 +38,15 @@
 	cursor: pointer;
 }
 form {
-	width: 80%;
+	width: 90%;
+	height: 85%;
 	display: flex;
 	justify-content: center;
 }
 fieldset {
 	display: flex;
 	flex-direction: column;
-	width: 80%;
+	width: 85%;
 	height: 90%;
 	font-size: 25px;
 	font-family: 'Gowun Batang', 'Courier New', Courier, monospace;
@@ -54,12 +58,20 @@ textarea {
 	resize: none;
 }
 label {
-	padding: 10px 5px;
+	padding: 2%;
 }
 #submit {
 	width: 20%;
 	align-self: flex-end;
 	margin: 10px;
+}
+
+@media (max-width: 850px) {
+	.modalContent {
+		top: 15vh;
+		left: 15vw;
+		position: absolute;
+	}
 }
 /* font-family: 'Hi Melody'; */
 
@@ -70,6 +82,3 @@ label {
 	width: 70%;
 	height: 70%; 
 }*/
-.badge {
-	padding-top: 20px;
-}

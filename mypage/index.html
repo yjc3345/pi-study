@@ -2,10 +2,12 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="modal.css">
     <link rel="stylesheet" href="dropdown.css">
     <link rel="stylesheet" href="accordion.css">
+    <link rel="stylesheet" href="stepper.css">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
@@ -15,34 +17,50 @@
 <body>
     <header>
         <nav class="navigationBar">
-            <div>ABOUT ME
-                <span>yayayyayayay</span>
+            <div class="volumeCounter">
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="counter">
+                    <button class="counterBtn plus">+</button>
+                    <!-- <input type="button" onclick="count('plus')" value="+" /> -->
+                    <div id="result"></div>
+                    <!-- <input type="button" onclick="count('minus')" value="-" /> -->
+                    <button class="counterBtn minus">-</button>
+                </div>
             </div>
-            <div class="dropdownBtn">
-                <span class="dropD">DROP DOWN</span>
-                <div class="dropdown">
-                    <div id="modalBtn">Visitors</div>
-                    <div class="accordion">ACCORDION 1</div>
-                    <div class="accordionCollapse">
-                        <div>one</div>
-                        <div>one</div>
-                        <div>one</div>
-                    </div>
-                    <div class="accordion">ACCORDION 2</div>
-                    <div class="accordionCollapse">
-                        <div>two</div>
+            <div class="navRight">
+                <div>ABOUT ME
+                    <span>yayayyayayay</span>
+                </div>
+                <div class="dropdownBtn">
+                    <span class="dropD">DROP DOWN</span>
+                    <div class="dropdown">
+                        <div id="modalBtn">Visitors</div>
+                        <div class="accordion">ACCORDION 1</div>
+                        <div class="accordionCollapse">
+                            <div>one</div>
+                            <div>one</div>
+                            <div>one</div>
+                        </div>
+                        <div class="accordion">ACCORDION 2</div>
+                        <div class="accordionCollapse">
+                            <div>two</div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <i class="fa-solid fa-volume-high"></i>
         </nav>
     </header>
     <div class="center">
         <div class="menu">
             <img src="IMG_2664.JPG">
-            <div>this should be mee</div>
-            <div>yayaya</div>
-            <div>yoyoyo</div>
+            <div class="showVisitor">
+                <div>
+                    최근 방명록
+                </div>
+                <p></p>
+                <p></p>
+            </div>
+
         </div>
         <div class="introAll">
             <div class="intro">
@@ -61,10 +79,10 @@
     <div class="modal">
         <div class="modalContent">
             <div class="close">❌</div>
-            <form action="#">
+            <form action="#" class="visitorsBook">
                 <fieldset>
                     <legend>방명록</legend>
-                    <label for="visitorsBookTitle">제목:
+                    <label for="visitorsBookTitle" onkeypress="return event.key != 'Enter';">이름:
                         <input type="text" name="visitorsBookTitle" id="visitorsBookTitle">
                     </label>
                     <label for="visitorsBookContent">내용:</label>
@@ -86,7 +104,11 @@
             <a href="mailto:yjc3345@naver.com" target="_blank">Email: yjc3345@naver.com</a>
         </div>
     </footer>
-    <script src="index.js"></script>
+    <script src="dropdown.js"></script>
+    <script src="modal.js"></script>
+    <script src="accordion.js"></script>
+    <script src="form.js"></script>
+    <script src="stepper.js"></script>
 </body>
 
 </html>
