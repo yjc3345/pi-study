@@ -76,17 +76,20 @@ nav i:hover {
 	font-family: 'Gowun Batang', 'Courier New', Courier, monospace;
 	max-height: 380px;
 	overflow: scroll;
-}
-.showVisitor > div {
-	font-size: 25px;
+	border-bottom: 1px solid rgb(177, 177, 177);
+	border-top: 1px solid rgb(177, 177, 177);
 }
 div.showVisitor::-webkit-scrollbar {
 	display: none;
+}
+.showVisitor > div {
+	font-size: 25px;
 }
 .menu img {
 	width: 100%;
 	min-width: 150px;
 }
+
 .intro {
 	display: flex;
 	flex-direction: column;
