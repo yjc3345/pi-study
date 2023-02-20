@@ -68,22 +68,31 @@ nav i:hover {
 	border-right: 1px solid lightgray;
 	margin-top: 65px;
 	padding: 50px 30px 30px 30px;
-	width: 45vw;
-	text-align: center;
+	width: 290px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	font-family: 'Courier New', Courier, monospace;
 }
 .showVisitor {
+	width: 100%;
 	font-family: 'Gowun Batang', 'Courier New', Courier, monospace;
 	max-height: 380px;
 	overflow: scroll;
 	border-bottom: 1px solid rgb(177, 177, 177);
 	border-top: 1px solid rgb(177, 177, 177);
 }
-div.showVisitor::-webkit-scrollbar {
+div.showVisitor::-webkit-scrollbar,
+.showVisitor p::-webkit-scrollbar {
 	display: none;
 }
 .showVisitor > div {
 	font-size: 25px;
+}
+.showVisitor > p {
+	overflow: scroll;
+	white-space: nowrap;
 }
 .menu img {
 	width: 100%;
@@ -128,12 +137,12 @@ a {
 }
 @media (max-width: 950px) {
 	.menu {
-		border: none;
-		width: 100%;
-		margin: 0;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
 		align-items: center;
-		padding-left: 0;
-		padding-right: 0;
+		border: none;
+		margin: 0;
 	}
 	.menu img {
 		width: 50%;
@@ -141,6 +150,10 @@ a {
 	}
 	.center {
 		display: block;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
 	}
 	.introAll {
 		display: flex;
