@@ -30,6 +30,6 @@
 	margin: 0 10px;
 }
 .introCarousel {
-	width: 40%;
-	margin-left: 50px;
+	width: 50%;
+	align-self: center;
 }
