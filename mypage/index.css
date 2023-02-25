@@ -22,7 +22,7 @@ header {
 header .navigationBar {
 	display: flex;
 	justify-content: space-between;
-	width: 1470px;
+	width: 100vw;
 	height: 65px;
 	background-color: rgba(245, 240, 173, 0.5);
 	padding: 20px 20px 10px 0;
